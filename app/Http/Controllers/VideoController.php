@@ -14,6 +14,6 @@ class VideoController extends Controller
         return view('cursos.create');;
     }
     public function show($video){
-        return view('cursos.show');;
+        return view('cursos.show', compact ('video'));
     }
 }
